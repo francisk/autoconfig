@@ -1,10 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: sample-pod
+  name: sample-podv1
+  namespace: demo
 spec:
   containers:
   - name: javasample
-    image: registry.baidubce.com/service/javasample:1.0
+    image: https://registry.baidubce.com/service/javasample:1.0
   imagePullSecrets:
   - name: baidubce
