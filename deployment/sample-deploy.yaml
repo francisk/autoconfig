@@ -1,13 +1,13 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
-metadata:
-  name: javasampleV1
+metadata: 
+  name: javasamplev1
   namespace: demo
 spec: 
   template: 
     metadata: 
       labels: 
-        app: javasampleV1
+        app: javasample 
     spec: 
       containers: 
       - name: javasample
