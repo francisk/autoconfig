@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata: 
-  name: javasamplev2
+  name: sampleservice
   namespace: demo
 spec: 
   template: 

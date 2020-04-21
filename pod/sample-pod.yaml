@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: sample-podv1
+  name: sample-podv2
   namespace: demo
 spec:
   containers:
