@@ -1,12 +1,15 @@
-apiVersion: helm.fluxcd.io/v1
-kind: deployment
-metadata: 
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
   name: javasample
   namespace: demo
-  fluxcd.io/automated: "false"
-  fluxcd.io/tag.chart-image: semver:~4.0
-spec:  
-  containers:      
-  - name: javasample    
-    image: registry.baidubce.com/service/javasample:1.0
-    imagePullPolicy: IfNotPresent
+spec:
+  template:
+    metadata:
+      labels:
+        app: javasample
+    spec:
+      containers:
+      - name: javasample
+        image: registry.baidubce.com/service/javasample:1.0
+        imagePullPolicy: IfNotPresent
