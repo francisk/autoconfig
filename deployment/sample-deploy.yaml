@@ -3,13 +3,13 @@ kind: Deployment
 metadata:
   name: javasample
   namespace: demo
-spec:
-  template:
-    metadata:
-      labels:
+spec: 
+  template: 
+    metadata: 
+      labels: 
         app: javasample
-    spec:
-      containers:
+    spec: 
+      containers: 
       - name: javasample
         image: registry.baidubce.com/service/javasample:1.0
         imagePullPolicy: IfNotPresent
