@@ -7,8 +7,6 @@ spec:
   containers:
   - name: javasample
     image: https://registry.baidubce.com/service/javasample:1.0
-    ports: 
-    - containerPort: 8081
 
   imagePullSecrets:
   - name: baidubce
