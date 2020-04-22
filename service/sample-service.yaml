@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sample-service
+  name: sample-servicev2
   labels:
     app: javasample
 spec:
