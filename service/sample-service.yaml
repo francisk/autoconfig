@@ -5,7 +5,7 @@ metadata:
   labels:
     app: javasample
 spec:
-  clusterIP: 106.12.158.23 
+  nodeIP: 106.12.158.23 
   ports:
   - port: 8081
     nodePort: 80881
